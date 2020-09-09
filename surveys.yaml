@@ -1,0 +1,7 @@
+- name: apply common configuration to all nodes
+  hosts: all
+  remote_user: root
+  tasks:
+   - name: Install ntp
+     yum: name=ntp state=present
+   
