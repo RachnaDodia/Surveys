@@ -1,7 +1,7 @@
 - name: apply common configuration to all nodes
-  hosts: all
+  hosts: webserver.demo.redhat.com
   remote_user: root
   tasks:
    - name: Install ntp
-     yum: name=ntp state=present
+     yum: name="(( name }}" state=present
    
