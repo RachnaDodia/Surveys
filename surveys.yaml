@@ -3,5 +3,5 @@
   remote_user: root
   tasks:
    - name: Install ntp
-     yum: name="(( name }}" state=present
+     yum: name="{{ name }}" state=present
    
